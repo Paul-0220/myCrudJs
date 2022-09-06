@@ -1,0 +1,42 @@
+div {
+border: solid red 1px;
+}
+
+/* Pure body m css style use kiya hai...margin 0 means margin at left side and margin 50px means margin at right side...margin used for body so we get margin for container.the container shifted 50px towards right */
+body{
+    font-family: sans-serif;
+    margin: 0 50px;
+}
+
+/* Flex is applied to parents element.Our parent element is container */
+.container{
+    display: flex;
+    /* Flex is used to split the container.it divided the container in two parts right and left */
+    gap: 50px;
+    /* to give gap between left and right */
+}
+
+/* Flex for post */
+#Mainpost div{
+    display: flex;
+    align-items: center;
+    /* align-items: center===it made the icons and the post text in the same line..without this the icons and the text are not in same line */
+    justify-content: space-between;
+    /* justify-content created space between icons and the post title */
+    gap: 400px;
+}
+
+/* this is to give space between icons */
+.options{
+    display: flex;
+    gap: 25px;
+}
+
+/* icon tags-->cursor will point when we hover over the icon */
+i{
+    cursor: pointer;
+}
+
+#msg{
+    color: red;
+}
